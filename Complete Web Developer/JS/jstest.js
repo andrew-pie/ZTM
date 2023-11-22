@@ -29,3 +29,4 @@ if (Number(year) < 18) {
 } else {
 	alert("Powering On. Enjoy the ride!");
 }
+
