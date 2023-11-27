@@ -30,3 +30,32 @@ if (Number(year) < 18) {
 	alert("Powering On. Enjoy the ride!");
 }
 
+var list = ["tiger", "cat", "bear", "bird"];
+console.log(list[0]);
+list.shift();
+list.pop();
+list.push("elephant");
+var newList = list.concat(["bee", "deer"]);
+newList.sort();
+
+var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+array.shift();
+array.sort();
+var newArray = array.concat(["Kiwi"]);
+newArray.shift();
+newArray.reverse();
+console.log(newArray);
+
+var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+console.log(array2[1][1]);
+
+var user = {
+	name: "John",
+	age: 34,
+	hobby: "Soccer",
+	isMared: false,
+};
+
+user.name;
+user.favouriteFood = "spinach";
+user.isMared = true;
