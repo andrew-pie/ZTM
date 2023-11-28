@@ -53,4 +53,3 @@ function checkDriverAge(age) {
 
 // var age = prompt("What is your age?");
 checkDriverAge(age = prompt("What is your age?"));
-
