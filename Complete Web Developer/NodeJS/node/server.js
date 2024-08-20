@@ -1,21 +1,7 @@
 const express = require('express');
 
 const app = express();
+app.use(express.static(__dirname + '/public'))
 
-app.use(express.urlencoded({extended: false}));
-app.use(express.json());
-
-app.get('/', (req, res) => {
-	res.send("getting root");
-});
-
-app.get('/profile', (req, res) => {
-	res.send("getting profile");
-});
-
-app.post('/', (req, res) => {
-	console.log(req.body)
-	res.send('success');
-});
 
 app.listen(3000);
